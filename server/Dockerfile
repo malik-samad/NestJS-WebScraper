@@ -1,8 +1,10 @@
-FROM node:16
+FROM node:14
 
-WORKDIR /usr/src/app/server
-COPY package*.json  ./
+USER node
+WORKDIR /home/node/app
 
-RUN npm install
+COPY --chown=node:node ./ ./
 
-CMD [ "npm", "run", "start" ]
+RUN npm ci
+
+CMD [ "npm", "run", "start:prod" ]

@@ -1,9 +1,8 @@
-FROM node:16
+FROM node:14
 
-WORKDIR /usr/src/app/client
+WORKDIR /usr/src/app
 
-COPY ./package*.json ./
+COPY ./ ./
 
-RUN npm install
-
+RUN npm ci
 CMD [ "npm", "run", "start" ]

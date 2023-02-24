@@ -19,7 +19,21 @@ input{
 }
 .RouterWrapper{
   flex-grow: 1;
+  max-height: calc(100% - 115px);
 }
 div{
   display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #dad9df;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2c0c8;
+  border-radius: 3px;
 }

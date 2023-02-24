@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./inputField.css";
+import "./style.css";
 
 type Props = {
     name: string,

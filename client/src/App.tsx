@@ -6,12 +6,16 @@ import Footer from "./components/footer";
 
 const router = createBrowserRouter([
   {
+    path: "/auth*",
+    element: <AuthView />
+  },
+  {
     path: "/",
     element: <HomeView />
   },
   {
-    path: "/auth*",
-    element: <AuthView />
+    path: "/home*",
+    element: <HomeView />
   },
   {
     path: "/*",

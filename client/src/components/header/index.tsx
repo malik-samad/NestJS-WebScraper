@@ -1,5 +1,5 @@
-import "./header.css";
-import "../inputField/inputField.css";
+import "./style.css";
+import "../inputField/style.css";
 
 export default function Header() {
     return <div className="header-wrapper">

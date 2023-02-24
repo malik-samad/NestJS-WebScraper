@@ -1,4 +1,4 @@
-import "../header/header.css"
+import "../header/style.css"
 
 export default function Footer() {
     return <div className="footer-wrapper">

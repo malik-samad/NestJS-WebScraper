@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import HomeView from './views/home';
 import AuthView from './views/auth';
-import DashboardView from './views/dashboard';
 import Header from "./components/header";
 import Footer from "./components/footer";
 
@@ -15,8 +14,8 @@ const router = createBrowserRouter([
     element: <AuthView />
   },
   {
-    path: "/dashboard*",
-    element: <DashboardView />
+    path: "/*",
+    element: <>404 - Page not found</>
   }
 ])
 

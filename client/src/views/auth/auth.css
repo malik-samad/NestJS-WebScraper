@@ -1,0 +1,38 @@
+.auth-wrapper{
+    flex-grow: 1; 
+    flex-direction: column;
+    justify-content: center;
+}
+.auth-card{
+    justify-content: center; 
+}
+.auth-card>div{
+    display: block;
+    min-width: 400px;
+    border: 1px solid #f5f2f2;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+}
+
+.auth-card-header{
+    padding: 10px 15px;
+    justify-content: center;
+    border-bottom: 1px solid #f5f2f2;
+}
+
+.auth-card-body{
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.auth-card-footer{
+    border-top: 1px solid #f5f2f2;
+    padding:15px
+}
+.auth-card-footer span{    
+    color: #a5a5a5;
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}

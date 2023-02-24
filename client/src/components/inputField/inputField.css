@@ -1,0 +1,30 @@
+.input-field-wraper{
+flex-direction: column;
+}
+.input-field-label{
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.input-field-wraper input{
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+}
+.click-effect, .input-field-wraper input[type=button]{
+    cursor: pointer;
+    background-color: #f3f3f3;
+}
+.click-effect:hover, .input-field-wraper input[type=button]:hover{
+    background-color: #e6e6e6;
+}
+
+.click-effect:active, .input-field-wraper input[type=button]:active{
+    background-color: #cfcfcf;
+    color:white
+}
+
+.password-toggle{
+    cursor: pointer;
+}

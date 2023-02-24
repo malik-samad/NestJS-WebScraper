@@ -14,5 +14,7 @@ export function ScraperReducer(state:ScraperState, action:ActionType_ScraperRedu
     switch(action.type){
         case ActionTypes_Scraper.SET_SCRAPER_LIST:
             return {...state, ...(action.payload as Scraper[])};
+        default:
+            return state;
     }
 }

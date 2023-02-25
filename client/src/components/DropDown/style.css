@@ -6,7 +6,7 @@ flex-direction: column;
     margin-top: 15px;
 }
 
-.input-field-wraper input, .input-field-wraper select, .input-field-wraper option{
+.input-field-wraper input{
     margin: 5px 0;
     padding: 15px;
     border-radius: 5px;

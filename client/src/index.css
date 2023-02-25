@@ -13,13 +13,14 @@ h1, h2, h3, h4, h5, h6, p{
 
 #root{ 
   flex-direction: column;
+  min-width: 1245px;
 }
 input{
   font-family: monospace;
 }
 .RouterWrapper{
   flex-grow: 1;
-  max-height: calc(100% - 115px);
+  max-height: calc(100% - 117px);
 }
 div{
   display: flex;
@@ -36,4 +37,36 @@ div{
 ::-webkit-scrollbar-thumb {
   background: #c2c0c8;
   border-radius: 3px;
+}
+
+.flex-h{
+  flex-direction: column;
+}
+
+.flex-v{
+  flex-direction: row;
+}
+.flex-c{
+  justify-content: center;
+}
+
+.flex-je{
+  justify-content: flex-end;
+}
+
+.flex-vc{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p-10{
+  padding:10px;
+}
+.plr-15{
+  padding-left: 15px;
+  padding-right: 15px
+}
+.rd-5px{
+  border-radius: 5px;
 }

@@ -1,11 +1,20 @@
 export type Scraper = {
+    _id: string | null;
     name: string;
-    homePageUrl: string;
+    baseUrl: string;
     dataPoints: DataPoint[]
 }
 
-export type DataPoint ={
-    name: string;
+export const emptyScraper: Scraper = {
+    _id: null,
+    name: "",
+    baseUrl: "",
+    dataPoints: []
+}
+
+export type DataPoint = {
+    fieldName: string;
     querySelector: string;
-    regex?: {reg: string, matchName: string};
+    regex: string;
+    matchName: string;
 }

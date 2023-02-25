@@ -9,7 +9,7 @@ import TuneIcon from '@mui/icons-material/Tune';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 export default function HomeView() {
 
-    return <div>
+    return <div style={{ flexGrow: 1 }}>
         <LeftNavDrawer elements={[{
             label: "New Scraper",
             href: "/home/new-scraper",

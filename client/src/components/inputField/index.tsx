@@ -12,6 +12,7 @@ type Props = {
     inputStyle?: React.CSSProperties,
     labelStyle?: React.CSSProperties,
     passToggleStyle?: React.CSSProperties,
+    disabled?: boolean,
 }
 
 export default function InputField(prop: Props) {
@@ -22,6 +23,6 @@ export default function InputField(prop: Props) {
             <label style={prop.labelStyle} >{prop.label}</label>
             {prop.type === "password" && <span style={prop.passToggleStyle} className="password-toggle" onClick={() => setShowPassword(!showPassword)}>{showPassword ? "Hide" : "Show"}</span>}
         </div>
-        <input name={prop.name} style={prop.inputStyle} value={prop.value} type={prop.type === "password" && showPassword ? "text" : prop.type} onChange={prop.onChange} />
+        <input name={prop.name} disabled={prop.disabled} style={prop.inputStyle} value={prop.value} type={prop.type === "password" && showPassword ? "text" : prop.type} onChange={prop.onChange} />
     </div>
 }

@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import TuneIcon from '@mui/icons-material/Tune';
 import AddBoxIcon from '@mui/icons-material/AddBox';
+
 export default function HomeView() {
 
     return <div style={{ flexGrow: 1 }}>

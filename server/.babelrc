@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/babelrc.json",
+  "presets": ["es2015", "stage-0", "react"],
+  "plugins": [
+    "babel-plugin-transform-typescript-metadata",
+    [
+        "@babel/plugin-proposal-decorators",
+        {
+            "legacy": true
+        }
+    ]
+]
+}

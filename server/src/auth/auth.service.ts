@@ -1,12 +1,18 @@
 import { Injectable } from "@nestjs/common";
+import { InjectModel } from "@nestjs/mongoose";
+import { Model } from "mongoose"
+import { User, UserDocument } from "schemas/user.schema";
 
 @Injectable({})
-export class AuthService{
-    signin(){
+export class AuthService {
+    constructor(@InjectModel(User.name) private userModel: Model<UserDocument>) { }
+
+    signin(user: User) {
         return "signing in...";
     }
 
-    signup(){
+    signup(user: User) {
+        this.userModel.create(user);
         return "signing up...";
     }
 }

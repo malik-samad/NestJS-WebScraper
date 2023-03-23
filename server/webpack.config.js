@@ -23,9 +23,7 @@ module.exports = {
     },
     plugins: [new CopyPlugin({
         patterns: [
-            path.resolve(__dirname, ".env.development"),
-            path.resolve(__dirname, ".env.development.local"),
-            path.resolve(__dirname, ".env.production"),
+            ".env.*",
         ]
     }), new webpack.HotModuleReplacementPlugin(),],
     resolve: {

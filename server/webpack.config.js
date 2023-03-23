@@ -1,7 +1,7 @@
-import * as path from "path";
-import * as nodeExternals from "webpack-node-externals";
-import * as CopyPlugin from "copy-webpack-plugin"
-import * as webpack from "webpack";
+const path = require( "path");
+const nodeExternals =require( "webpack-node-externals");
+const CopyPlugin = require("copy-webpack-plugin")
+const  webpack =require( "webpack");
 
 module.exports = {
     entry: [
@@ -9,14 +9,15 @@ module.exports = {
         "./src/main.ts"
     ],
     target: "node",
+    mode:"development",
     devtool: 'inline-source-map',
     externals: [nodeExternals({ allowlist: ['webpack/hot/poll?100'], })],
     module: {
         rules: [
             {
-                test: /\.(tsx?|m?js)$/,
-                use: "ts-loader",
+                test: /\.tsx?$/,
                 exclude: /node_modules/,
+                use: "ts-loader",
             },
         ],
     },

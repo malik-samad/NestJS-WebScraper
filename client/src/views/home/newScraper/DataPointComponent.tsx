@@ -1,3 +1,4 @@
+import React from "react"
 import InputField from "../../../components/inputField";
 import { DataPoint } from "../../../types";
 import DeleteIcon from '@mui/icons-material/Delete';

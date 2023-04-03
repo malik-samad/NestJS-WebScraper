@@ -1,3 +1,4 @@
+import React from "react"
 import LeftNavDrawer from "../../components/leftNavDrawer"
 import "./style.css"
 import NewScraper from "./newScraper";

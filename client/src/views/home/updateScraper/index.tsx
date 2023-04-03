@@ -1,3 +1,4 @@
+import React from "react"
 import DropDown from "../../../components/DropDown"
 import InputField from "../../../components/inputField"
 import { DataPoint, emptyScraper, Scraper } from "../../../types"

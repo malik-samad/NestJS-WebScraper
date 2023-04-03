@@ -1,3 +1,4 @@
+import React from "react"
 import "../header/style.css"
 
 export default function Footer() {

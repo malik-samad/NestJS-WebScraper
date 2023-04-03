@@ -1,3 +1,4 @@
+import React from "react"
 import DropDown from "../../../components/DropDown"
 import { Scraper } from "../../../types"
 import "./style.css"

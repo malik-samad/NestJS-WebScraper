@@ -11,9 +11,6 @@ import { MongooseModule } from "@nestjs/mongoose"
     MongooseModule.forRoot('mongodb://admin:pass@localhost:27017/ScraperDb?authSource=admin'),
     AuthModule,
     ScraperModule,
-    ServeStaticModule.forRoot({
-      rootPath: resolve('../client/build'),
-    })
   ],
   controllers: [AppController],
 })

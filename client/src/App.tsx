@@ -1,3 +1,4 @@
+import React from "react"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import HomeView from './views/home';
 import AuthView from './views/auth';
